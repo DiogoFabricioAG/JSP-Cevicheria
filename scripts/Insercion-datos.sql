@@ -31,3 +31,28 @@ VALUES
 (2, 'token_unico_2', '2024-12-02 12:00:00'),
 (3, 'token_unico_3', '2024-12-02 12:00:00');
 
+INSERT INTO productos (producto_nombre, producto_precio, producto_imagen, producto_categoria)
+VALUES
+('Ceviche Afrodisiaco', 62.00, 'url_imagen_ceviche_afrodisiaco.jpeg', 'Ceviches'),
+('Trio de Ceviche', 72.00, 'url_imagen_trio_ceviche.jpeg', 'Ceviches'),
+('Ceviche clasico mixto', 62.00, 'url_imagen_ceviche_clasico.jpeg', 'Ceviches'),
+('Ceviche de conchas negras', 62.00, 'url_imagen_ceviche_conchas.jpeg', 'Ceviches'),
+('Piqueo frio con causa', 69.00, 'url_imagen_piqueo_frio.jpeg', 'Ceviches'),
+('Ceviche lenguado', 69.00, 'url_imagen_ceviche_lenguado.jpeg', 'Ceviches'),
+('Ceviche lenguado con pulpo y langostino', 71.00, 'url_imagen_lenguado_pulpo_langostino.jpeg', 'Ceviches'),
+('Lenguado a la hawaiana', 69.00, 'url_imagen_lenguado_hawaiana.jpeg', 'Ceviches'),
+('Lenguado en salsa de champiñones', 69.00, 'url_imagen_lenguado_champinones.jpeg', 'Ceviches'),
+('Lenguado a la florentina', 69.00, 'url_imagen_lenguado_florentina.jpeg', 'Ceviches'),
+('Lenguado a la oriental', 50.00, 'url_imagen_lenguado_oriental.jpeg', 'Ceviches'),
+('Lenguado entero en crema al ajo o hojuela de ajos crocante', 80.00, 'url_imagen_lenguado_ajo.jpeg', 'Ceviches'),
+('Leche de tigre', 25.00, 'url_imagen_leche_tigre.jpeg', 'Ceviches');
+
+
+INSERT INTO productos (producto_nombre, producto_precio, producto_imagen, producto_categoria)
+VALUES
+('Chicha Morada', 5.00, 'url_imagen_chicha.jpg', 'Bebidas'),
+('Limonada Frozen', 6.00, 'url_imagen_limonada_frozen.jpg', 'Bebidas'),
+('Cerveza Artesanal', 15.00, 'url_imagen_cerveza.jpg', 'Bebidas'),
+('Coca Cola Personal', 4.00, 'url_imagen_coca_cola.jpg', 'Bebidas'),
+('Agua Mineral', 3.00, 'url_imagen_agua_mineral.jpg', 'Bebidas');
+

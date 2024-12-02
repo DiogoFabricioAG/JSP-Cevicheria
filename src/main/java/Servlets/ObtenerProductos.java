@@ -13,7 +13,7 @@ import java.sql.*;
 import java.util.*;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(name = "index", urlPatterns = {"/inicio"})
+@WebServlet(name = "inicio", urlPatterns = {"/inicio"})
 public class ObtenerProductos extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
