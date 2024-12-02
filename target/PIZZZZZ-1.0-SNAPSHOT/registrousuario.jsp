@@ -1,8 +1,3 @@
-<%-- 
-    Document   : registrousuario
-    Created on : 1 dic. 2024, 13:06:09
-    Author     : Diogo
---%>
 
 <<%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>

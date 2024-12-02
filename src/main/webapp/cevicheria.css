@@ -1,0 +1,456 @@
+html,body{
+    height: 320vh;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.parte_contenedora{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.parte1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen_de_empresa{
+    width: 100%;
+    height: 70%;
+    background-color: #021f3d; 
+    box-sizing: border-box;
+    
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.caja_barra_de_busqueda{
+    width: 100%;
+    height: 20%;
+    background-color: #b2b4b5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.barra_de_busqueda{
+    width: 500px;
+    height: 25px;
+    border-radius: 20px;
+    z-index: 0;
+    padding: 10px 20px;
+}
+.lupa{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+.boton_lupa{
+    all: unset;
+    cursor: pointer;
+}
+.caja_de_texto_y_sesion{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2b4b5;
+    
+}
+.iniciando_sesion{
+    all: unset;
+    cursor: pointer;
+    width: 150px;
+    height: 25px;
+    position: relative;
+    right: 100px;
+    color: white;
+
+}
+/*INICIO DE SESION*/
+.Formulario{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.caja_formulario{
+    display: block;
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 15% auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: space-evenly;
+   
+
+}
+.caja_button_cerrando_sesion{
+    width: 90%;
+    height: 1%; 
+    
+}
+.cerrando_sesion,.cerrando_registro{
+    all: unset;
+    position: relative;
+    left: 435px;
+    bottom: 28px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.cerrando_sesion:hover{
+    opacity: 0.6;
+
+}
+.titulo{
+    font-size: 28px;
+    
+}
+.input_form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 38%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.Ingresar_correo, .Ingrese_contraseña, .cargar_cuenta{
+    padding: 5px;
+    margin: 2px;
+
+}
+.caja_registro{
+    width: 65%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.registrar_cuenta{
+    all: unset;
+    font-weight: 700;
+    cursor: pointer;
+}
+.registrar_cuenta:hover{
+    opacity: 0.6;
+}
+/*REGISTRAR USUARIO*/
+.Formulario_registro{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.parte2{
+    width: 100%;
+    height: 50%;
+    background-color: #96b3d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.caja_de_imagen_plato {
+    width: 100%;
+    height: 100%;
+    background-color: #233543;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 5 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centrado horizontal de los elementos */
+    align-items: start; /* Alineación al inicio de la caja (arriba) */
+    padding: 20px; /* Espaciado interno */
+}
+
+.caja_imagen {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    align-items: start; 
+    padding: 20px;
+}
+
+.imagen_plato {
+    width: 260px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+
+
+.plato{
+    width: 100%;
+    height: 70%;
+    
+    border-radius: 8px;
+}
+.img_plato{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descripcion_del_plato{
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+}
+.precio_del_plato{
+    width: 100%;
+    height: 25px;
+    border: 1px solid #021f3d;
+    border-radius: 5px;
+    background-color: #021f3d;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+.comprar_aqui{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton_de_pedir_comida{
+    all:unset;
+    cursor: pointer;
+    font-size: 20px;
+}
+.boton_de_pedir_comida:hover{
+    color: #021f3d;
+    opacity: 0.5;
+}
+
+
+
+
+
+.parte3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-color: #dd8505;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.parte1_de_parte3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.metodo_de_pago{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 40px;
+    background-color: #021f3d;
+   
+}
+.img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}   
+.parte2_de_parte3{
+    width: 30%;
+    height: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconos_de_redes{
+    width: 300px;
+    height: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-envelope:hover{
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+
+
+
+.servicios{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b2b4b5;
+
+}
+.titulo_servicios{
+    font-size: 40px;
+}
+.opciones_de_servicios{
+    width:  50%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.reservas, .recojo, .Delivery{
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:#021f3d;
+    color: white;
+}
+.reservas:hover, .recojo:hover, .Delivery:hover{
+    
+    opacity: 0.5;
+    cursor: pointer;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        max-height: 80%; /* Limita la altura del modal */
+        overflow-y: auto; /* Habilita el scroll vertical */
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    form label {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        width: 80%; /* Centra los labels e inputs */
+    }
+    
+    form input, form select, form button {
+        width: 80%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    form button {
+        background-color: #021f3d;
+        color: white;
+        border: none;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #034078;
+    }
+    .close {
+        position: absolute;
+        top: 10px; /* Ajusta la distancia desde la parte superior */
+        right: 10px; /* Ajusta la distancia desde la parte derecha */
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+

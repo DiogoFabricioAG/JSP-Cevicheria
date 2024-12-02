@@ -1,7 +1,10 @@
+Servlets\LoginWeb.class
+Servlets\ObtenerProductos.class
 ClasesJavas\Reserva.class
 Servlets\CrearReserva.class
 ClasesJavas\ConexionSQL.class
 Servlets\RegistrarUsuario.class
+ClasesJavas\Producto.class
 ClasesJavas\Usuario.class
 ClasesJavas\Mesa.class
 Servlets\ObtenerMesasDisponibles.class
