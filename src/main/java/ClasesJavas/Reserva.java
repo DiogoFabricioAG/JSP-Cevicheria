@@ -3,43 +3,105 @@ package ClasesJavas;
 import java.sql.Timestamp;
 
 public class Reserva {
-    private int id;
-    private int usuarioId;
-    private Timestamp fechaReserva;
-    private int numeroPersonas;
-    private String peticionesEspeciales;
-    private Timestamp fechaCreacion;
-    private Timestamp horaReserva;
-    private int mesaId;
-    private String tiempoMaximo;
+    private int reservasId;
+    private int reservasUsuarioId;
+    private int reservasNumeroPersonas;
+    private String reservasDia;
+    private int reservasNumero;
+    private String reservasPeticionesEspeciales;
+    private Timestamp reservasFechaCreacion;
+    private int ordenId;
+    private int reservasFechaReservaId;
+    private int reservasMesaId;
 
-    public Reserva(int usuarioId, Timestamp fechaReserva, int numeroPersonas, 
-                   String peticionesEspeciales, Timestamp horaReserva, int mesaId) {
-        this.usuarioId = usuarioId;
-        this.fechaReserva = fechaReserva;
-        this.numeroPersonas = numeroPersonas;
-        this.peticionesEspeciales = peticionesEspeciales;
-        this.horaReserva = horaReserva;
-        this.mesaId = mesaId;
+    public Reserva(int reservasUsuarioId, int reservasNumeroPersonas, String reservasDia, int reservasNumero, String reservasPeticionesEspeciales, int ordenId, int reservasFechaReservaId, int reservasMesaId) {
+        this.reservasUsuarioId = reservasUsuarioId;
+        this.reservasNumeroPersonas = reservasNumeroPersonas;
+        this.reservasDia = reservasDia;
+        this.reservasNumero = reservasNumero;
+        this.reservasPeticionesEspeciales = reservasPeticionesEspeciales;
+        this.ordenId = ordenId;
+        this.reservasFechaReservaId = reservasFechaReservaId;
+        this.reservasMesaId = reservasMesaId;
     }
 
-    // Getters y setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public int getUsuarioId() { return usuarioId; }
-    public void setUsuarioId(int usuarioId) { this.usuarioId = usuarioId; }
-    public Timestamp getFechaReserva() { return fechaReserva; }
-    public void setFechaReserva(Timestamp fechaReserva) { this.fechaReserva = fechaReserva; }
-    public int getNumeroPersonas() { return numeroPersonas; }
-    public void setNumeroPersonas(int numeroPersonas) { this.numeroPersonas = numeroPersonas; }
-    public String getPeticionesEspeciales() { return peticionesEspeciales; }
-    public void setPeticionesEspeciales(String peticionesEspeciales) { this.peticionesEspeciales = peticionesEspeciales; }
-    public Timestamp getFechaCreacion() { return fechaCreacion; }
-    public void setFechaCreacion(Timestamp fechaCreacion) { this.fechaCreacion = fechaCreacion; }
-    public Timestamp getHoraReserva() { return horaReserva; }
-    public void setHoraReserva(Timestamp horaReserva) { this.horaReserva = horaReserva; }
-    public int getMesaId() { return mesaId; }
-    public void setMesaId(int mesaId) { this.mesaId = mesaId; }
-    public String getTiempoMaximo() { return tiempoMaximo; }
-    public void setTiempoMaximo(String tiempoMaximo) { this.tiempoMaximo = tiempoMaximo; }
+    public int getReservasId() {
+        return reservasId;
+    }
+
+    public void setReservasId(int reservasId) {
+        this.reservasId = reservasId;
+    }
+
+    public int getReservasUsuarioId() {
+        return reservasUsuarioId;
+    }
+
+    public void setReservasUsuarioId(int reservasUsuarioId) {
+        this.reservasUsuarioId = reservasUsuarioId;
+    }
+
+    public int getReservasNumeroPersonas() {
+        return reservasNumeroPersonas;
+    }
+
+    public void setReservasNumeroPersonas(int reservasNumeroPersonas) {
+        this.reservasNumeroPersonas = reservasNumeroPersonas;
+    }
+
+    public String getReservasDia() {
+        return reservasDia;
+    }
+
+    public void setReservasDia(String reservasDia) {
+        this.reservasDia = reservasDia;
+    }
+
+    public int getReservasNumero() {
+        return reservasNumero;
+    }
+
+    public void setReservasNumero(int reservasNumero) {
+        this.reservasNumero = reservasNumero;
+    }
+
+    public String getReservasPeticionesEspeciales() {
+        return reservasPeticionesEspeciales;
+    }
+
+    public void setReservasPeticionesEspeciales(String reservasPeticionesEspeciales) {
+        this.reservasPeticionesEspeciales = reservasPeticionesEspeciales;
+    }
+
+    public Timestamp getReservasFechaCreacion() {
+        return reservasFechaCreacion;
+    }
+
+    public void setReservasFechaCreacion(Timestamp reservasFechaCreacion) {
+        this.reservasFechaCreacion = reservasFechaCreacion;
+    }
+
+    public int getOrdenId() {
+        return ordenId;
+    }
+
+    public void setOrdenId(int ordenId) {
+        this.ordenId = ordenId;
+    }
+
+    public int getReservasFechaReservaId() {
+        return reservasFechaReservaId;
+    }
+
+    public void setReservasFechaReservaId(int reservasFechaReservaId) {
+        this.reservasFechaReservaId = reservasFechaReservaId;
+    }
+
+    public int getReservasMesaId() {
+        return reservasMesaId;
+    }
+
+    public void setReservasMesaId(int reservasMesaId) {
+        this.reservasMesaId = reservasMesaId;
+    }
 }

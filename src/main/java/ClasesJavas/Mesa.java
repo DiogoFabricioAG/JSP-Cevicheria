@@ -1,38 +1,41 @@
 package ClasesJavas;
 
 public class Mesa {
-    private int id;
-    private int numero;
-    private int capacidad;
+    private int mesasId;
+    private String mesasCodigo;
+    private int tipoMesaId;
 
-    public Mesa(int id, int numero, int capacidad) {
-        this.id = id;
-        this.numero = numero;
-        this.capacidad = capacidad;
+    public Mesa() {}
+
+    public Mesa(int mesasId, String mesasCodigo, int tipoMesaId) {
+        this.mesasId = mesasId;
+        this.mesasCodigo = mesasCodigo;
+        this.tipoMesaId = tipoMesaId;
     }
 
-    // Getters y setters
-    public int getId() {
-        return id;
+    public int getMesasId() {
+        return mesasId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMesasId(int mesasId) {
+        this.mesasId = mesasId;
     }
 
-    public int getNumero() {
-        return numero;
+    public String getMesasCodigo() {
+        return mesasCodigo;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setMesasCodigo(String mesasCodigo) {
+        this.mesasCodigo = mesasCodigo;
     }
 
-    public int getCapacidad() {
-        return capacidad;
+    public int getTipoMesaId() {
+        return tipoMesaId;
     }
 
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
+    public void setTipoMesaId(int tipoMesaId) {
+        this.tipoMesaId = tipoMesaId;
     }
-}
+
+ }
+
